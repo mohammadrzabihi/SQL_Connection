@@ -16,10 +16,14 @@ namespace WebApplication9.Code
         // Define a struct to represent an actor
         public struct strcActor
         {
-            public int ID { get; set; } //identity
+            public int ID { get; set; } // Identity
             public string Name { get; set; }
             public string Username { get; set; }
             public string Password { get; set; }
+            public int IdGenderType { get; set; } // New field
+            public int IdMilitaryServiceType { get; set; } // New field
+            public string MilitaryServiceStatus { get; internal set; }
+            public string Gender { get; internal set; }
         }
 
         // Method to select all actors
@@ -27,7 +31,7 @@ namespace WebApplication9.Code
         {
             try
             {
-                SqlCommand command = new SqlCommand("SELECT ID, name, username, password FROM actor");
+                SqlCommand command = new SqlCommand("SELECT ID, name, username, password, IdGenderType, IdMilitaryServiceType FROM actor");
                 return _dbHelper.ExecuteQuery(command);
             }
             catch (Exception ex)
@@ -42,10 +46,12 @@ namespace WebApplication9.Code
         {
             try
             {
-                SqlCommand command = new SqlCommand("INSERT INTO actor (name, username, password) VALUES (@Name, @Username, @Password); SELECT SCOPE_IDENTITY();");
+                SqlCommand command = new SqlCommand("INSERT INTO actor (name, username, password, IdGenderType, IdMilitaryServiceType) VALUES (@Name, @Username, @Password, @IdGenderType, @IdMilitaryServiceType); SELECT SCOPE_IDENTITY();");
                 command.Parameters.AddWithValue("@Name", actor.Name);
                 command.Parameters.AddWithValue("@Username", actor.Username);
                 command.Parameters.AddWithValue("@Password", actor.Password);
+                command.Parameters.AddWithValue("@IdGenderType", actor.IdGenderType); // New parameter
+                command.Parameters.AddWithValue("@IdMilitaryServiceType", actor.IdMilitaryServiceType); // New parameter
                 return Convert.ToInt32(_dbHelper.ExecuteScalar(command));
             }
             catch (Exception ex)
@@ -60,10 +66,12 @@ namespace WebApplication9.Code
         {
             try
             {
-                SqlCommand command = new SqlCommand("UPDATE actor SET name = @Name, password = @Password WHERE ID = @ID");
+                SqlCommand command = new SqlCommand("UPDATE actor SET name = @Name, password = @Password, IdGenderType = @IdGenderType, IdMilitaryServiceType = @IdMilitaryServiceType WHERE ID = @ID");
                 command.Parameters.AddWithValue("@Name", actor.Name);
                 command.Parameters.AddWithValue("@Password", actor.Password);
-                command.Parameters.AddWithValue("@ID", actor.ID); // Changed No to ID
+                command.Parameters.AddWithValue("@IdGenderType", actor.IdGenderType); // New parameter
+                command.Parameters.AddWithValue("@IdMilitaryServiceType", actor.IdMilitaryServiceType); // New parameter
+                command.Parameters.AddWithValue("@ID", actor.ID);
                 return _dbHelper.ExecuteNonQuery(command);
             }
             catch (Exception ex)
@@ -104,5 +112,19 @@ namespace WebApplication9.Code
                 throw;
             }
         }
+        public DataTable GetLookupData(string lookupType)
+        {
+            try
+            {
+                SqlCommand command = new SqlCommand("SELECT id, name FROM lookup WHERE id IN (1, 2)"); // Adjust the query as needed
+                return _dbHelper.ExecuteQuery(command);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in GetLookupData: {ex.Message}");
+                throw;
+            }
+        }
+
     }
 }

@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\webapplication9\\code\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|solutionrelative:webapplication9\\code\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|c:\\users\\mohammad\\desktop\\project\\webapplication9\\webapplication9\\code\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|solutionrelative:webapplication9\\code\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\webapplication9\\code\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|solutionrelative:webapplication9\\code\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|c:\\users\\mohammad\\desktop\\project\\webapplication9\\webapplication9\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\webapplication9\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|solutionrelative:webapplication9\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|c:\\users\\mohammad\\desktop\\project\\webapplication9\\webapplication9\\content\\scripts\\jquery.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|solutionrelative:webapplication9\\content\\scripts\\jquery.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\webapplication9\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|solutionrelative:webapplication9\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\webapplication9\\content\\styles\\css\\overall\\all.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|solutionrelative:webapplication9\\content\\styles\\css\\overall\\all.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|c:\\users\\mohammad\\desktop\\project\\webapplication9\\webapplication9\\code\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{913D5A65-5D7E-417D-87DA-A7B63D9D199D}|WebApplication9\\WebApplication9.csproj|solutionrelative:webapplication9\\code\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,37 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Agent.cs",
-              "DocumentMoniker": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\Code\\Agent.cs",
-              "RelativeDocumentMoniker": "WebApplication9\\Code\\Agent.cs",
-              "ToolTip": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\Code\\Agent.cs",
-              "RelativeToolTip": "WebApplication9\\Code\\Agent.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAkwHIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T05:37:26.837Z",
+              "Title": "jquery.js",
+              "DocumentMoniker": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\Content\\Scripts\\jquery.js",
+              "RelativeDocumentMoniker": "WebApplication9\\Content\\Scripts\\jquery.js",
+              "ToolTip": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\Content\\Scripts\\jquery.js",
+              "RelativeToolTip": "WebApplication9\\Content\\Scripts\\jquery.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-17T08:38:11.793Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "all.css",
-              "DocumentMoniker": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\Content\\Styles\\css\\Overall\\all.css",
-              "RelativeDocumentMoniker": "WebApplication9\\Content\\Styles\\css\\Overall\\all.css",
-              "ToolTip": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\Content\\Styles\\css\\Overall\\all.css",
-              "RelativeToolTip": "WebApplication9\\Content\\Styles\\css\\Overall\\all.css",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-16T12:57:30.757Z"
+              "DocumentIndex": 3,
+              "Title": "Actor.cs",
+              "DocumentMoniker": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\Code\\Actor.cs",
+              "RelativeDocumentMoniker": "WebApplication9\\Code\\Actor.cs",
+              "ToolTip": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\Code\\Actor.cs",
+              "RelativeToolTip": "WebApplication9\\Code\\Actor.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAswHYAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T07:53:12.455Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "WebForm1.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\WebForm1.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication9\\WebForm1.aspx.cs",
               "ToolTip": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\WebForm1.aspx.cs",
               "RelativeToolTip": "WebApplication9\\WebForm1.aspx.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAmwH0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAswKUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T12:35:30.765Z",
               "EditorCaption": ""
@@ -77,32 +70,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DatabaseHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\Code\\DatabaseHelper.cs",
-              "RelativeDocumentMoniker": "WebApplication9\\Code\\DatabaseHelper.cs",
-              "ToolTip": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\Code\\DatabaseHelper.cs",
-              "RelativeToolTip": "WebApplication9\\Code\\DatabaseHelper.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAkwFwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T12:08:18.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Actor.cs",
-              "DocumentMoniker": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\Code\\Actor.cs",
-              "RelativeDocumentMoniker": "WebApplication9\\Code\\Actor.cs",
-              "ToolTip": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\Code\\Actor.cs",
-              "RelativeToolTip": "WebApplication9\\Code\\Actor.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAUwGwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T12:05:00.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "WebForm1.aspx",
               "DocumentMoniker": "C:\\Users\\Mohammad\\Desktop\\project\\WebApplication9\\WebApplication9\\WebForm1.aspx",
               "RelativeDocumentMoniker": "WebApplication9\\WebForm1.aspx",

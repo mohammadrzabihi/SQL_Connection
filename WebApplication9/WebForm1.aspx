@@ -41,6 +41,31 @@
                 </div>
             </div>
 
+            <!-- Gender Dropdown -->
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon4">جنسیت<i class="fas fa-venus-mars"></i></span>
+                    <asp:DropDownList ID="ddlGender" runat="server" CssClass="form-control" aria-describedby="basic-addon4">
+                        <asp:ListItem Value="">انتخاب جنسیت</asp:ListItem>
+                        <asp:ListItem Value="1">مرد</asp:ListItem>
+                        <asp:ListItem Value="2">زن</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+            </div>
+
+            <!-- Military Service Dropdown -->
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon5">وضعیت خدمت<i class="fas fa-shield-alt"></i></span>
+                    <asp:DropDownList ID="ddlMilitaryService" runat="server" CssClass="form-control" aria-describedby="basic-addon5" disabled="disabled">
+                        <asp:ListItem Value="">انتخاب وضعیت</asp:ListItem>
+                        <asp:ListItem Value="3">مشول</asp:ListItem>
+                        <asp:ListItem Value="4">غایب</asp:ListItem>
+                         <asp:ListItem Value="5">معاف</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+            </div>
+
             <asp:Button ID="btnAdd" runat="server" Text="اضافه کردن بازیگر" OnClick="btnAdd_Click" CssClass="btn btn-primary" /><br /><br />
 
             <h3>بازیگران موجود</h3>
@@ -59,22 +84,8 @@
                             <asp:TextBox ID="txtPasswordEdit" runat="server" Text='<%# Bind("Password") %>' TextMode="Password" CssClass="form-control"></asp:TextBox>
                         </EditItemTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="نام">
-                        <EditItemTemplate>
-                            <asp:TextBox ID="txtName" runat="server" Text='<%# Bind("Name") %>' CssClass="form-control"></asp:TextBox>
-                        </EditItemTemplate>
-                        <ItemTemplate>
-                            <asp:Label ID="lblName" runat="server" Text='<%# Bind("Name") %>'></asp:Label>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="نام کاربری">
-                        <EditItemTemplate>
-                            <asp:TextBox ID="txtUsername" runat="server" Text='<%# Bind("Username") %>' CssClass="form-control"></asp:TextBox>
-                        </EditItemTemplate>
-                        <ItemTemplate>
-                            <asp:Label ID="lblUsername" runat="server" Text='<%# Bind("Username") %>'></asp:Label>
-                        </ItemTemplate>
-                    </asp:TemplateField>
+                    <asp:BoundField DataField="IdGenderType" HeaderText="جنسیت" />
+                    <asp:BoundField DataField="IdMilitaryServiceType" HeaderText="وضعیت خدمت" />
                     <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" CancelText="انصراف" DeleteText="حذف" EditText="ویرایش" UpdateText="به روز رسانی">
                         <ControlStyle CssClass="btn btn-sm" />
                     </asp:CommandField>
@@ -89,5 +100,6 @@
     <script src="Content/Scripts/JSS/bootstrap.min.js"></script>
     <!-- Optional: Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="Content/Scripts/jquery.js"></script>
 </body>
 </html>

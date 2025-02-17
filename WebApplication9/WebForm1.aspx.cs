@@ -38,22 +38,54 @@ namespace WebApplication9
         {
             try
             {
+                // Validate the inputs
+                if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
+                {
+                    lblErrorMessage.Text = "Please fill in all the fields.";
+                    return;
+                }
+
+                // Check gender selection
+                if (ddlGender.SelectedIndex == 0)
+                {
+                    lblErrorMessage.Text = "Please select a gender.";
+                    return;
+                }
+
+                // Get values from the form
+                string name = txtName.Text;
+                string username = txtUsername.Text;
+                string password = txtPassword.Text;
+                int genderId = Convert.ToInt32(ddlGender.SelectedValue);
+                int militaryServiceId = Convert.ToInt32(ddlMilitaryService.SelectedValue);
+
+                // Create the actor object
                 Actor.strcActor newActor = new Actor.strcActor
                 {
-                    Name = txtName.Text,
-                    Username = txtUsername.Text,
-                    Password = txtPassword.Text
+                    Name = name,
+                    Username = username,
+                    Password = password,
+                    IdGenderType = genderId,
+                    IdMilitaryServiceType = militaryServiceId
                 };
 
+                // Insert the actor into the database
                 actorManager.Insert(newActor);
+
+                // Clear the input fields
                 ClearInputFields();
+
+                // Refresh the grid view
                 BindData();
-                lblSuccessMessage.Text = "Actor added successfully!";
+
+                // Display a success message
+                lblSuccessMessage.Text = "بازیگر با موفقیت اضافه شد!";
                 lblErrorMessage.Text = "";
             }
             catch (Exception ex)
             {
-                lblErrorMessage.Text = "Error adding actor: " + ex.Message;
+                // Display an error message
+                lblErrorMessage.Text = "خطا در اضافه کردن بازیگر: " + ex.Message;
                 lblSuccessMessage.Text = "";
             }
         }
@@ -77,12 +109,17 @@ namespace WebApplication9
                 GridViewRow row = gvActors.Rows[e.RowIndex];
                 int actorID = Convert.ToInt32(gvActors.DataKeys[e.RowIndex].Value); // Get the actor ID
 
+                // Retrieve values from the GridView's edit row
+                string name = ((TextBox)row.FindControl("txtName")).Text;
+                string username = ((TextBox)row.FindControl("txtUsername")).Text;
+                string password = ((TextBox)row.FindControl("txtPasswordEdit")).Text;
+
                 Actor.strcActor updatedActor = new Actor.strcActor
                 {
                     ID = actorID, // Set the ID for the update
-                    Name = ((TextBox)row.FindControl("txtName")).Text,
-                    Username = ((TextBox)row.FindControl("txtUsername")).Text,  //Get the Username
-                    Password = ((TextBox)row.FindControl("txtPasswordEdit")).Text  // Get the updated password
+                    Name = name,
+                    Username = username,  //Get the Username
+                    Password = password   // Get the updated password
                 };
 
                 actorManager.Update(updatedActor);
@@ -121,6 +158,8 @@ namespace WebApplication9
             txtName.Text = "";
             txtUsername.Text = "";
             txtPassword.Text = "";
+            ddlGender.SelectedIndex = 0; // Reset to the first item
+            ddlMilitaryService.SelectedIndex = 0; // Reset to the first item
         }
     }
 }

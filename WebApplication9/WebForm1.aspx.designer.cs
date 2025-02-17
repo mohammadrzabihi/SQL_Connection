@@ -51,6 +51,24 @@ namespace WebApplication9
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
 
         /// <summary>
+        /// ddlGender control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlGender;
+
+        /// <summary>
+        /// ddlMilitaryService control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlMilitaryService;
+
+        /// <summary>
         /// btnAdd control.
         /// </summary>
         /// <remarks>

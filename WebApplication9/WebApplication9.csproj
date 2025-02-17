@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Scripts\jquery.js" />
     <Content Include="Content\Scripts\JSS\bootstrap.min.js" />
     <Content Include="Content\Scripts\JSS\jquery-3.5.1.min.js" />
     <Content Include="Content\Scripts\JSS\popper.min.js" />
